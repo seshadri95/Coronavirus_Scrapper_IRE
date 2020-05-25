@@ -6,7 +6,7 @@ import unicodedata
 import pandas as pd
 
 
-url = 'https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_Republic_of_Ireland'
+url = 'https://en.wikipedia.org/wiki/Template:COVID-19_pandemic_data/Republic_of_Ireland_medical_cases'
 req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 webpage = urlopen(req).read()
 soup = BeautifulSoup(webpage,features="lxml")

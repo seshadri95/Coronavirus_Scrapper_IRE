@@ -56,8 +56,9 @@ df = df[~df.Country.isin(['Total:','World'])]
 # Replacing NA with 0 as new cases are not confirmed yet
 df.fillna(0,inplace = True)
 
+print(df)
 # Converting datatype
-for col in df.columns[1:-1]:
+for col in df.columns[2:-1]:
     df[col] = df[col].astype('int')
 
 # Sort countries based on total cases
